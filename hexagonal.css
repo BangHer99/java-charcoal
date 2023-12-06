@@ -195,7 +195,7 @@
 }
 
 .containers p {
-    text-align: center;
+    text-align: justify;
     /* display: flex; */
     padding-top: 10;
     padding-bottom: 50px;
@@ -203,12 +203,18 @@
     align-items: center;
     font-size: 18px;
 }
+.containers h2 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
 
 .containers span p{
     text-align: justify;
-    /* display: flex; */
-    /* padding-top: 10; */
-    /* padding-bottom: 50px; */
+   
     justify-content: justify;
     align-items: center;
     font-size: 18px;
