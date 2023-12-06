@@ -160,7 +160,9 @@
     width: 300px;
     /* transition: transform; */
 }
-
+article img{
+  padding-bottom: 20px;
+}
 /* .grid > article img {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;

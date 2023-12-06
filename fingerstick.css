@@ -199,6 +199,9 @@
     align-items: center;
     font-size: 18px;
 }
+article img{
+  padding-bottom: 20px;
+}
 
 .containers span p{
     text-align: justify;
