@@ -161,6 +161,9 @@
     /* transition: transform; */
 }
 
+article img{
+  padding-bottom: 20px;
+}
 
 .containers {
     background-color: #EDEDED;
