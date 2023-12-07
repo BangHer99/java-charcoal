@@ -161,9 +161,6 @@
     /* transition: transform; */
 }
 
-article img{
-  padding-bottom: 20px;
-}
 
 .containers {
     background-color: #EDEDED;
@@ -183,18 +180,10 @@ article img{
     font-size: 50px;
 }
 
-.containers h2 {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
 .containers p {
-    text-align: justify;
+    text-align: center;
     /* display: flex; */
-    padding-top: 10;
+    padding-top: 10px;
     padding-bottom: 50px;
     justify-content: center;
     align-items: center;

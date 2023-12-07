@@ -13,10 +13,10 @@ submit.addEventListener('submit',(e)=>{
     // `;
 
     Email.send({
-        SecureToken : "b205c030-8db6-41d6-97ee-5499036587d7", //add your token here
+        SecureToken : "e2c552b9-9d18-49c4-9671-9400e07c3de8", //add your token here
         To : document.getElementById("gmail").value, 
-        From : "javacharcoal.bamni@gmail.com",
-        Subject : "javacharcoal website visitors",
+        From : "tuyulbanting58@gmail.com",
+        Subject : "This is the subject",
         Body : "Name : " + document.getElementById("fname").value
               +"<br/> Email : " + document.getElementById("gmail").value //"im Interested with your product"
               +"<br/> Message : " + document.getElementById("msg").value

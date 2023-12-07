@@ -46,7 +46,10 @@
     text-transform: uppercase;
     text-decoration: none;
   }
-
+  /* a.active,a:hover{
+    background: #000000;
+    transition: .5s;
+  } */
 .nav ul li a:hover{
     background: #000000;
     transition: .5s;
@@ -81,8 +84,6 @@
 
 .about {
     background: url(testing.jpeg);
-    background-size: cover;
-
 }
 
 
@@ -159,76 +160,78 @@
 
 
 /* OUR PREMIUM BRAND */
+
 .wrapper {
-    background: url(Our\ Quality.png);
-    background-size: cover;
-    padding-bottom: 80px;
-
-
-}
-.wrapper h1 {
-    text-align: center;
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    color: #EDEDED;
-    text-shadow: 5px 5px 5px black;
+    align-items: center; */
+    border: black 3px solid;
+    background-color: #000;
+    /* min-height: 100vh; */
+    /* margin: 5px 0; */
+    /* padding-left: 50px; */
+    /* padding-right: 59vh; */
+    /* padding-bottom: 8vh; */
+    /* padding-top: 5vh; */
+
+    grid-template-columns: repeat(2,1fr);
+    /* background-color: #EDEDED; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 8vh;
+    padding-top: 5vh;
 }
 
-.our .icons {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    /* margin-bottom: 20px; */
-    /* margin: 10px 30px 10px 90px; */
-    align-items: center;
-    /* padding-left: 70px;
-    padding-right: 50px; */
-    grid-gap: 50px; 
-    padding-top: 20px;
-    padding-bottom: 50px;
-    color: #EDEDED;
-    font-size: 5vh;
-    justify-content: center;
-}
-.vector {
-    text-align: center;
-    padding-bottom: 20px;
-}
-.texts p {
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-}
-@media (max-width:550px){
-.our   .icons {
-        display: grid;
-        grid-template-columns: repeat(3,2fr);
-        /* margin-bottom: 20px; */
-        /* margin: 10px 30px 10px 90px; */
-        align-items: center;
-        /* padding-left: 70px;
-        padding-right: 50px; */
-        grid-gap: 50px; 
-        padding-top: 20px;
-        padding-bottom: 50px;
-        color: #EDEDED;
-        font-size: 5vh;
-        justify-content: center;
-    }
-    
+/* .wrapper >img{
+    float: right;
+    justify-content: end;
+    border: #000 3px solid;
+    border-radius: 5px;
+    margin-right: 50px;
+} */
+
+.wrapper p {
+    /* width: 95%;
+    font-size: 18px; */
+
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    /* padding-left: 20px; */
 }
 
 
-@media (max-width:476px){
-    .containers {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+
+.text-box h3{
+    color: #fff;
 }
+
+.text-box h2 {
+    font-size: 42px;
+    color: #FF9900;
+}
+
+.text-box p {
+    /* font-size: 20px; */
+    /* width: 100%; */
+    /* text-align: justify; */
+    color: #fff;
+
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    /* padding-left: 20px; */
+}
+
+.text-box img {
+    /* font-size: 18px; */
+    max-width: 280px;
+    color: #fff;
+    padding-left: 300px;
+}
+
 
 @media (max-width:380px){
     .forAbout{
@@ -243,9 +246,14 @@
     
     }
     .wrapper{
-    
+        /* display: grid; */
+        /* grid-template-columns: repeat(2,1fr); */
+        /* background-color: #EDEDED; */
         padding: 20px;
-      
+        /* padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 8vh;
+        padding-top: 5vh; */
     
     }
 
@@ -325,51 +333,83 @@
 
                                 /* GALLERY */
 .gallery {
-    background-color: #515151;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .gallery h1 {
-    color: #fff;
-    font-size: 40px;
+    font-size: 80px;
     padding-bottom: 50px;
     font-weight: bolder;
-    text-shadow: 5px 5px 5px black;
-
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-shadow: 3px 2px 1px #904804 ;
 }
 
 
 .grid-gallery {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    /* margin-bottom: 20px; */
+    /* margin: 10px 30px 10px 90px; */
     align-items: center;
-    padding-left: 70px;
+    padding-left: 100px;
     padding-right: 50px;
     grid-gap: 50px;
     padding-top: 20px;
     padding-bottom: 50px;
+    /* background-color: #EDEDED; */
 }
 
 .grid-gallery > article {
+    /* box-shadow: 10px 5px 5px 0px #000; */
+    /* border-radius: 30px; */
     text-align: center;
     background: #EDEDED;
     width: 300px;
+    /* transition: transform; */
 }
 
 
 
 
 
-
-
+.desc {
+width: 70%;
+ text-align: justify;
+ -webkit-column-count: 3; /* support Chrome, Safari, Opera */
+ -moz-column-count: 3; /* support Firefox */
+ column-count : 3;
+ /*lebar column*/
+ -webkit-column-width: 100px; /* support Chrome, Safari, Opera */
+ -moz-column-width: 100px; /* support Firefox */
+ column-width :100px;
+ background-color: #EDEDED;
+ /*jarak column dengan column yang lain*/
+ -webkit-column-gap : 20px;
+ -moz-column-gap : 20px;
+ column-gap : 20px;	
+ padding-left: 90px;
+ padding-bottom: 20px;
+ 
+}
+.read ul > li > a {
+    background-color: #EDEDED;
+    padding-left: 200px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
 
 /* SPECIALITIES */
 
 .special {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    /* margin: 80px; */
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
@@ -395,6 +435,7 @@
 .special article {
     text-align: justify;
     background: #EDEDED;
+    /* width: 300px; */
     transition: transform;
 }
 
@@ -431,14 +472,22 @@
     display: grid;
     text-align: center;
     grid-template-columns: repeat(2,1fr);
+    /* margin: 80px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     align-items: center;
+    /* grid-gap: 10px; */
     padding-top: 50px;
     padding-bottom: 50px;
+    /* background-color: #000; */
 
 }
 
 .qual {
+    /* border: black 3px solid; */
     color: #fff;
+    /* background: #515151; */
+    /* padding: 20px; */
     padding: 20px 10px 20px 30px;
     border-radius: 5px;
     grid-gap: 30px;
@@ -463,15 +512,20 @@
     color: #000;
     padding: 1px;
     justify-content: center;
+    /* text-align: justify; */
 }
 
 .quality  h1 {
     padding-top: 50px;
+    /* background-color: #000; */
     text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 40px;
     padding-bottom: 10px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* color: #FF9900; */
 }
 
 .qual > h2 {
@@ -489,8 +543,9 @@
 
 .tc {
     text-align: center;
+    /* /* background-color: #EDEDED; */
+    /* padding-bottom: 4cm; */
     padding-top: 50px;
-    padding-bottom: 100px;
     
 }
 
@@ -560,6 +615,7 @@
 /* CONTACT US RESPONSIVE */
 
 .contact{
+    margin-top: 100px;
     position: relative;
     min-height: 100vh;
     padding: 100px 100px;
@@ -653,7 +709,7 @@
     font-weight: 500;
 }
 
- /* CUSTOM */
+ /* CUSTOM SENDIRI */
 .contactForm span {
     color: #EDEDED;
     padding: 10px;
@@ -675,12 +731,16 @@ textarea {
 }
 
 .footer p {
+    /* border: 5px #fff solid ; */
     margin-top: 200px;
     color: #fff;
+    /* margin-bottom: -50px; */
 }
 
 @media (max-width:600px){
     .contact {
+    margin-top: 100px;
+    /* position: relative; */
     min-height: 50vh;
     padding: 10px 10px;
     display: flex;
@@ -722,8 +782,10 @@ textarea {
 
 @media (max-width:403px){
     .contact{
+        margin-top: 100px;
         position: relative;
         min-height: 100vh;
+        /* padding: 100px 100px; */
         padding-bottom: 50px;
         display: flex;
         justify-content: center;
@@ -793,6 +855,7 @@ textarea {
      .container .contactInfo .box .text {
         display: flex;
         flex-direction: column;
+        /* margin-left: 20px; */
         padding-bottom: 50px;
         font-size: 16px;
         color: #fff;
@@ -814,7 +877,7 @@ textarea {
         font-weight: 500;
     }
     
-     /* CUSTOM */
+     /* CUSTOM SENDIRI */
     .contactForm span {
         color: #EDEDED;
         padding: 10px;
@@ -824,6 +887,7 @@ textarea {
     textarea {
         background-color: rgba(146, 107, 0, 0.695);
         border: none;
+        /* padding: 20px 20px; */
         padding-left: 20px;
         margin-bottom: 2px;
         width: 80%;
@@ -834,8 +898,10 @@ textarea {
     
     
     .footer p {
+        /* border: 5px #fff solid ; */
         margin-top: 200px;
         color: #fff;
+        /* margin-bottom: -50px; */
     }
 }
 
@@ -847,9 +913,11 @@ textarea {
         grid-template-columns: repeat(2,1fr);
     }
     .text-box img {
+        /* font-size: 18px; */
         max-width: 200px;
         color: #fff;
         padding-right: 2px;
+        /* padding-left: 20%; */
         margin-right: -100%;
     }
 
@@ -859,7 +927,19 @@ textarea {
 
     
 }
+/* @media(max-width:800px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .text-box img {
+        max-width: 280px;
+        color: #fff;
+        padding-left: 20%;
+    }
 
+
+    
+} */
 
 @media(max-width:720px){
     .grid{
@@ -882,61 +962,35 @@ textarea {
     .grid {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        margin: 10px 25px 10px 25px;
+        /* margin: 8%; */
         align-items: center;
         grid-gap: 30px;
+        padding-left: 5px;
+        padding-right: 50px;
         padding-top: 10px;
         padding-bottom: 100px;
     }
     .grid-gallery{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        /* margin: 10px 25px 10px 25px; */
+        margin: 10px 25px 10px 25px;
+        /* margin: 8%; */
         align-items: center;
         grid-gap: 30px;
-        /* padding-left: 5px; */
-        /* padding-right: 50px; */
+        padding-left: 5px;
+        padding-right: 50px;
         padding-top: 10px;
         padding-bottom: 100px;
     }
     .text-box img {
+        /* font-size: 18px; */
         max-width: 300px;
         color: #fff;
+        /* padding-left: 20%; */
     }
     
 }
-
-@media(max-width:476px){
-    .containers {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        align-items: center;
-        grid-gap: 30px;
-        padding-top: 10px;
-        padding-bottom: 100px;
-    }
-
-    .containers h1 {
-        font-size: 50px;
-        padding-left: 30px;
-    }
-    .grid-gallery{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        align-items: center;
-        grid-gap: 30px;
-        padding-top: 10px;
-        padding-bottom: 100px;
-    }
-    .text-box img {
-        text-align: center;
-        max-width: 300px;
-        color: #fff;
-    }
-    
-    
-}
-
-
 
 @media (max-width: 952px){
     label.logo{
@@ -980,29 +1034,44 @@ textarea {
 
   @media (max-width:380px){
     .forAbout{
+        /* display: grid; */
+        /* grid-template-columns: repeat(2,1fr); */
         background-color: #EDEDED;
         padding: 20px;
+        /* padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 8vh;
+        padding-top: 5vh; */
     
     }
     .wrapper{
+        /* display: grid; */
+        /* grid-template-columns: repeat(2,1fr); */
+        /* background-color: #EDEDED; */
         padding: 20px;
+        /* padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 8vh;
+        padding-top: 5vh; */
     
     }
 
     .quality{
+        /* display: grid; */
         grid-template-columns: repeat(1,1fr);
         background-color: #EDEDED;
+        /* padding-left: -25px; */
         padding-right: 50px;
+        /* padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 8vh;
+        padding-top: 5vh; */
+    
     }
     .grid-gallery {
         padding-right: 30px;
         width: 200px;
-    }
-    .text p {
-        padding-right: 20px;
-    }
-    .contactForm {
-        padding-left: 20px;
+        margin-left: 10px;
     }
 }
 
@@ -1011,4 +1080,4 @@ html{
     scroll-behavior: smooth;
 }
 
-
+ /* CUSTOM SENDIRI */
